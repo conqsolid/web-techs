@@ -1,0 +1,25 @@
+{
+  "name": "web-techs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "node_modules/typescript/bin/tsc TypeScriptSource/*.ts --outDir dist",
+    "run": "npm run ts && node dist/Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://conqsolid:Gs6225eu-@github.com/conqsolid/web-techs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conqsolid/web-techs/issues"
+  },
+  "homepage": "https://github.com/conqsolid/web-techs#readme",
+  "dependencies": {
+    "typescript": "^3.5.2"
+  }
+}
