@@ -1,0 +1,67 @@
+body {
+  background-color: #eeeeee; }
+
+.navbar {
+  background-color: #90904d;
+  padding: 1rem;
+  width: 100%;
+  text-align: center; }
+  .navbar ul {
+    list-style: circle; }
+  .navbar li {
+    text-align: center;
+    margin: 1rem;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg); }
+
+div {
+  padding: 40px;
+  height: 150px;
+  width: 100px; }
+
+.button, .button-secondary {
+  background-color: #0000ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem; }
+
+.button-secondary {
+  background-color: #4CAF50; }
+
+.h1 {
+  font-size: 4em; }
+
+.h6 {
+  font-size: 2em; }
+
+.list-1 {
+  min-width: 2px; }
+
+.list-2 {
+  min-width: 4px; }
+
+.list-3 {
+  min-width: 6px; }
+
+.list-4 {
+  min-width: 8px; }
+
+.list-5 {
+  min-width: 10px; }
+
+.list-1 {
+  max-width: 2px; }
+
+.list-2 {
+  max-width: 4px; }
+
+.list-3 {
+  max-width: 6px; }
+
+.list-4 {
+  max-width: 8px; }

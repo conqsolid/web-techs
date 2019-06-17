@@ -1,0 +1,89 @@
+@import 'header';
+
+$color-primary: #eeeeee;
+
+body {
+  background-color: $color-primary;
+}
+
+@mixin transform($degree) {
+  -webkit-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  transform: rotate($degree);
+}
+
+.navbar {
+  background-color: rgb(144, 144, 77);
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style: circle;
+  }
+
+  li {
+    text-align: center;
+    margin: 1rem;
+    @include transform(10deg);
+  }
+}
+
+
+
+div {
+  padding: #{divide(80, 2)}px;
+  height: 150px;
+  width: 100px;
+}
+
+
+.button{
+    background-color: #0000ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.button-secondary{
+    @extend .button;
+    background-color: #4CAF50; // Green
+}
+
+@mixin heading($size) {
+    $SIZE_LARGE : 4em;
+    $SIZE_MEDIUM : 3em;
+    $SIZE_SMALL : 2em;
+
+    @if $size == large{
+        font-size: $SIZE_LARGE;
+    }@else if $size == medium{
+        font-size: $SIZE_MEDIUM;
+    }@else{
+        font-size: $SIZE_SMALL;
+    }
+}
+
+.h1{
+    @include heading(large);
+}
+
+.h6{
+    @include heading(small);
+}
+
+@for $index from 1 through 5{
+    .list-#{$index}{
+        min-width: 2px * $index;
+    }
+}
+
+@for $index from 1 to 5{
+    .list-#{$index}{
+        max-width: 2px * $index;
+    }
+}
